@@ -10,4 +10,4 @@ edition = "2018"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
-xunit-struct = { git = "https://github.com/osynge/xunit-struct.git" }
+xunit-struct = { git = "https://github.com/osynge/xunit-struct.git", branch = "main" }
