@@ -1,5 +1,7 @@
 #[macro_use]
 extern crate serde_derive;
+use std::collections::HashMap;
+
 pub use xunit_struct::errors::XunitError;
 pub use xunit_struct::model::Xunit;
 pub use serde::{Deserialize, Serialize};
@@ -11,17 +13,10 @@ pub struct File {
     pub filename: String,
 }
 
-
-#[derive(Debug, Clone, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd, Hash)]
-pub struct KeyValue {
-    pub key: String,
-    pub value: String,
-}
-
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Enviroment {
     pub sk: Option<String>,
-    pub key_value: Vec<KeyValue>,
+    pub key_value: HashMap<String,String>,
 }
 
 
