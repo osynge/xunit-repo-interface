@@ -14,7 +14,7 @@ pub struct File {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Enviroment {
+pub struct Environment {
     pub sk: Option<String>,
     pub key_value: HashMap<String,String>,
 }
@@ -37,7 +37,7 @@ pub struct Run {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Upload {
     pub project: Project,
-    pub enviroment: Enviroment,
+    pub environment: Environment,
     pub run: Run,
     pub files: Vec<File>,
 }
