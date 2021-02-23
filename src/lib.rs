@@ -23,7 +23,7 @@ pub struct Environment {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Project {
     pub sk: Option<String>,
-    pub identiifier: Option<String>,
+    pub identifier: Option<String>,
     pub human_name: Option<String>,
 }
 
