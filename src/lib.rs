@@ -46,7 +46,7 @@ pub struct UploadResponse {
     pub environment: String,
     pub run_identifier: String,
     pub test_run: String,
-    pub viewer_url: String,
+    pub viewer_url: Option<String>,
 }
 
 #[cfg(test)]
